@@ -28,13 +28,22 @@
 </div>
 
 <div>
-  <iframe src="web splash mockup.pdf#toolbar=null&navpanes=null&scrollbar=null&frameborder=null" width="1000" height="1000" type='application/pdf'></iframe>
+  <iframe src="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf' overflow="hidden"></iframe>
 </div>
 
 <div>
-<embed src="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0" width="1000" height="1000" type='application/pdf' >>
+<embed src="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf' >>
 </div>
 
+.index.html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.index.html {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 
 
