@@ -3,55 +3,19 @@
 <body>
   
 <!-- 
-    iframe::-webkit-scrollbar {
-      
-    }
-    
-    object::-webkit-scrollbar {
-      
-    }
+<div> 
+  <object data="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf'></object>
+</div>
 
-    embed::-webkit-scrollbar {
-  
-    }
+
+<div>
+<embed src="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf' >
+</div>
 
 
 
 
-
-
-iframe::content {
-      overflow: hidden;
-      box-sizing: content-box;
-
-    }
-
-    iframe::-webkit-scrollbar{
-      width: 0;
-    }
-
-    html {
-    overflow: scroll;
-    overflow-x: hidden;
-}
-::-webkit-scrollbar {
-    width: 0;  /* Remove scrollbar space */
-    
-}
-
-
-
-
-
-
-
-
-      overflow: hidden;
-      box-sizing: content-box;
-
-      
-
-display:none; 
+    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
 -->
 
 
@@ -67,7 +31,7 @@ display:none;
     top: 0;
     bottom: 0;
     left: 0;
-    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+    right: auto;
     overflow-y: scroll;
 
     }
@@ -75,27 +39,22 @@ display:none;
     
     </style>
 
+
+
+
+
+
+
+
 <div>
     <h1>Test: are the scrollbar and border invisible yet?</h1>
   </div>
-  
-  
-
-
-
-
-
-<div> 
-  <object data="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf'></object>
-</div>
 
 <div>
   <iframe src="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf' ></iframe>
 </div>
 
-<div>
-<embed src="web splash mockup.pdf#toolbar=0&navpanes=0&scrollbar=0&frameborder=0" width="1000" height="1000" type='application/pdf' >
-</div>
+
 
 
 
