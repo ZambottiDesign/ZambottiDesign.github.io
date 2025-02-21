@@ -13,16 +13,14 @@
 </div>
 
 
-
-
-    right: -17px; /* Increase/Decrease this value for cross-browser compatibility */
+    box-sizing: content-box; /* So the width will be 100% + 17px */
 -->
 
 
   <style>
 
     html {
-      width: 100%;
+      width:max-content;
       height: 100%;
       overflow: hidden;
       position: relative;
@@ -34,8 +32,7 @@
     bottom: 0;
     left: 0;
     overflow-y: scroll;
-    padding-right: 17px; /* Increase/decrease this value for cross-browser compatibility */
-    box-sizing: content-box; /* So the width will be 100% + 17px */
+
 
     }
 
