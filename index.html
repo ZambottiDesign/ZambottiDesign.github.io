@@ -7,20 +7,17 @@
   
 -->
 
-  <style>
+	
 
+  <style>
     body {
       outline: none;
       border: none;
     }
-
     html {
       overflow: hidden;
       position: relative;
     }
-
-
-   
     iframe {
       position: relative; 
       width: 102.5%;  
@@ -36,13 +33,47 @@
       outline: none;
       stroke-width: 0;
       stroke: none;
-      background-color: white;}
-
-
-
-
+      background-color: white;
+	}
     </style>
       <!--   -->
+
+
+
+
+
+
+
+
+	  function load(url) {
+		// display loading image here...
+		document.getElementById('SZ_Logo tight.png').visible = true;
+		// request your data...
+		var req = new XMLHttpRequest();
+		req.open("POST", url, true);
+	
+		req.onreadystatechange = function () {
+			if (req.readyState == 4 && req.status == 200) {
+				// content is loaded...hide the gif and display the content...
+				if (req.responseText) {
+					document.getElementById('content').innerHTML = req.responseText;
+					document.getElementById('SZ_Logo tight.png').visible = false;
+				}
+			}
+		};
+		request.send(vars);
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 
 <iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" width="100%" height="1000" type='application/pdf' frameBorder="none"></iframe> 
