@@ -1,29 +1,6 @@
 
 <!DOCTYPE html>
 <html>
-
-
-
-function load(url) {
-	// display loading image here...
-	document.getElementById('SZ_Logo tight.png').visible = true;
-	// request your data...
-	var req = new XMLHttpRequest();
-	req.open("POST", url, true);
-
-	req.onreadystatechange = function () {
-		if (req.readyState == 4 && req.status == 200) {
-			// content is loaded...hide the gif and display the content...
-			if (req.responseText) {
-				document.getElementById('content').innerHTML = req.responseText;
-				document.getElementById('SZ_Logo tight.png').visible = false;
-			}
-		}
-	};
-	request.send(vars);
-}
-
-
 <body>
   
 <!--   
@@ -33,6 +10,20 @@ function load(url) {
 	
 
   <style>
+
+	.loader-wrapper{
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color:white;
+	}
+
+	.loader{
+		display: 'SZ_Logo tight.png';
+	}
+
     body {
       outline: none;
       border: none;
@@ -81,9 +72,20 @@ function load(url) {
 
 
 
-
-<iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" width="100%" height="1000" type='application/pdf' frameBorder="none"></iframe> 
+<div class="content">
+	<iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" width="100%" height="1000" type='application/pdf' frameBorder="none"></iframe> 
+</div>
  
+<div class="loader-wrapper">
+<span class="loader"><span>class="loader-inner"></span></span>
+</div>
+
+<script>
+	$(window).on("load",function(){
+		$("loader-wrapper").fadeOut("slow");
+	});
+</script>
+
 
 </body>
 </html>
