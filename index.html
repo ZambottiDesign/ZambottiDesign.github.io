@@ -80,18 +80,16 @@
 
 
 <div class="content">
-	<iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" onload="killloadscreen()" width="100%" height="1000" type='application/pdf' frameBorder="none"></iframe> 
+	<iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" onload.complete="killloadscreen()" width="100%" height="1000" type='application/pdf' frameBorder="none"></iframe> 
 </div>
  
-
-
 
 
 
 <script>
 	function killloadscreen(){
 		const preloader = document.getElementById('preloader'); 
-    const content = document.getElementById('content'); 
+    	const content = document.getElementById('content'); 
      
     // Hide preloader and show content 
     preloader.style.display = 'none'; 
