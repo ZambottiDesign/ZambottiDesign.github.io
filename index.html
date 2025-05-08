@@ -121,7 +121,13 @@ window.addEventListener('load', function() {
 
 
 <script>
-document.onload=killloadscreen;
+
+document.addEventListener('load', function() { 
+  document.onload=killloadscreen;
+});
+
+
+
 </script>
 
 
