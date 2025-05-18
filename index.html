@@ -1,7 +1,20 @@
 
 <!DOCTYPE html>
 <html>
-<body>
+
+<script>
+	function killloadscreen(){
+		const preloader = document.getElementById('preloader'); 
+    	const content = document.getElementById('content'); 
+     
+    // Hide preloader and show content 
+    preloader.style.display = 'none'; 
+    content.style.display = 'block'; 
+	}
+
+</script>
+
+<body onload="killloadscreen()">
   
 <!--   
 
@@ -23,7 +36,7 @@
 	.loader{
 		position: absolute;
 		z-index: 5;
-		width: 100%;
+		width: fit-content;
 		height: 100%;
 		background-color: white;
 		top: 0;
@@ -79,7 +92,7 @@
 
 
 <div class="content">
-	<iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" width="100%" height="1000" type='application/pdf' frameBorder="none" onload="killloadscreen()"></iframe> 
+	<iframe src="OfficialWebPortfolioInProgTest5.pdf#toolbar=0&navpanes=0&scrollbar=0&frameBorder=0&view=FitH" width="100%" height="1000" type='application/pdf' frameBorder="none"></iframe> 
        <!--  onload="killloadscreen()"-->
 
 </div>
@@ -93,21 +106,11 @@
 
 
 
+<!--document.readyState == complete -->
 
 
 
 
-<script>
-	function killloadscreen(){
-		const preloader = document.getElementById('preloader'); 
-    	const content = document.getElementById('content'); 
-     
-    // Hide preloader and show content 
-    preloader.style.display = 'none'; 
-    content.style.display = 'block'; 
-	}
-
-</script>
 
 <!--  
 <script>
