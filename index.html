@@ -8,8 +8,14 @@
 
   <meta name="viewport" content="width=device-width, initial-scale=0.60">
 --> 
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale.width=1">
-  
+  <meta name="viewport1" content="width=device-width, height=device-height, initial-scale.width=1">
+  <script>
+if (screen.width < 1090) {
+    var mvp = document.getElementById('viewport1');
+    mvp.setAttribute('content','width=65%');
+}
+</script>
+
 </head>
 
 
@@ -91,7 +97,7 @@
   position: relative; 
       width: 102.5%;  
       top: 15px;
-            bottom: 0; /* <---------------------- */
+      bottom: 0; /* <---------------------- */
       left: -11px;
       overflow-y: scroll;
       scale: 60%;
