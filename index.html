@@ -9,12 +9,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=0.60">
 --> 
   <meta name="viewport" content="width=device-width, height=device-height, initial-scale.width=1">
-  <script>
-if (screen.width < 1090) {
-    var mvp = document.getElementById('viewport');
-    mvp.setAttribute('content','width=700');
-}
-</script>
 
 </head>
 
@@ -173,7 +167,12 @@ if (screen.width < 1090) {
 
 
 
-
+  <script>
+if (screen.width < 1090) {
+    var mvp = document.getElementById('viewport');
+    mvp.setAttribute('content','width=700');
+}
+</script>
 
 
 
