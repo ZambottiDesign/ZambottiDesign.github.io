@@ -84,17 +84,19 @@
 	}
 
 
-/*
+/*    */
 
-  @media screen and (max-width: 1090px) {
+
+
+ @media screen and (max-width: 1200px) {
       iframe {
   position: relative; 
       width: 102.5%;  
-      top: 15px;
+      top: -15px;
       bottom: 0; 
       left: -11px;
       overflow-y: scroll;
-      scale: 100%;
+    /*    scale: 100%;  */
       border: none;
       outline: none;
       stroke-width: 0;
@@ -102,7 +104,6 @@
       background-color: white;
  } 
 }
- */
 
 
 
@@ -136,43 +137,23 @@
 -->
  
 </div>
- 
-
-
-
-
-
-
-
-
-
-<!--document.readyState == complete -->
 
 
 
 
 
 <!--  
-<script>
-  document.addEventListener("DOMContentLoaded", function(arg) {
-      const preloader = document.getElementById('preloader'); 
-      const content = document.getElementById('content'); 
-       
-      // Hide preloader and show content 
-      preloader.style.display = 'none'; 
-      content.style.display = 'block'; 
-  });
-  </script>
--->
-
-
-
   <script>
-if (screen.width < 1090) {
+if (screen.width < 1280) {
     var mvp = document.getElementById('viewport');
     mvp.setAttribute('content','width=700');
 }
 </script>
+-->
+
+
+
+
 
 
 
