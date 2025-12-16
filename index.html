@@ -1,42 +1,39 @@
 
 <!DOCTYPE html>
 <html>
-
-<head>
- <!--   
-<link rel="stylesheet" href="normalize.css">
-
-  <meta name="viewport" content="width=device-width, initial-scale=0.60">
-
-  <script> var bigDevHeight = (device-height * 1.2) </script>
---> 
-
-
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.60, user-scalable=yes">
-
-</head>
+  <head>  <!--  -->
+      <meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.60, user-scalable=yes">
+  </head>
 
 
 <script>
 	function killloadscreen(){
 		const preloader = document.getElementById('preloader'); 
     	const content = document.getElementById('content'); 
-     
+      
     // Hide preloader and show content 
     preloader.style.display = 'none'; 
     content.style.display = 'block'; 
 	}
-
 </script>
 
-<body onload="setTimeout(killloadscreen, 9000);">
-  
 
 
+
+ <!-- "setTimeout(killloadscreen, 9000);" -->
+
+
+
+
+
+
+
+
+<body>
 	<div id="preloader">
 		<div class="loader">
-      <video autoplay loop>
-        <source src="website loading gif.mp4" type="video/mp4" autoplay loop/>
+      <video autoplay loop muted>
+        <source src="website loading gif.mp4" type="video/mp4" autoplay loop muted/>
       </video>
 		</div>
 	</div>
@@ -45,30 +42,26 @@
 
 
   <style>
-
-	
-
 	.loader{
-
-
-
-    
-		position: absolute;
-		z-index: 5;
-		width: fit-content;
-		height: fit-content;
-		background-color: white;
-
+		  position: absolute;
+		  z-index: 999;
+		  width: fit-content;
+		  height: fit-content;
+		  background-color: white;
 	  }
+
 
     body {
       outline: none;
       border: none;
     }
+
+
     html {
       overflow: hidden;
       position: relative;
     }
+
     iframe {
       position: relative; 
       width: 102.5%;  
@@ -88,16 +81,8 @@
 		top: 0;
 		left: 0;
 		display: 'website loading gif.mp4';
-
-
-    
 */
 
-
-
-
-
-      
       /*    
        position: relative; 
       width: 102.5%;  
